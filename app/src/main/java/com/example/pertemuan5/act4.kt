@@ -31,4 +31,8 @@ import com.example.pertemuan5.R
 
 @Composable
 fun FormDataDiri(modifier: Modifier = Modifier) {
+    // Variable-variable untuk mengingat nilai masukan dari keyboard
+    var textNama by remember { mutableStateOf(value = "") }
+    var textAlamat by remember { mutableStateOf(value = "") }
+    var textJK by remember { mutableStateOf(value = "") }
 }
