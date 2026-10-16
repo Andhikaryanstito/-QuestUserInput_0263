@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.pertemuan5.ui.theme.Pertemuan5Theme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +19,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             Pertemuan5Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    // Form input akan ditambahkan di sini
+                    // Memanggil form input kamu di sini
+                    FormDataDiri(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
