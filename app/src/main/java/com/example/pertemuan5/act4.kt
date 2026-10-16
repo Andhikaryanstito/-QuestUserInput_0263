@@ -99,7 +99,11 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxWidth(fraction = 1f),
             // the button is enabled when the user makes a selection
             enabled = textAlamat.isNotEmpty(),
-            onClick = {}
+            onClick = {
+                nama = textNama
+                jenis = textJK
+                alamat = textAlamat
+            }
         ) {
             Text(stringResource(id = R.string.submit))
         }
